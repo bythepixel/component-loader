@@ -1,10 +1,12 @@
 {
   "name": "@bythepixel/component-loader",
-  "version": "0.4.0",
+  "version": "0.5.5",
   "description": "'A component loading system for reducing bottlenecks in the browser.'",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx babel src --out-dir dist --source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,17 @@
   "bugs": {
     "url": "https://github.com/bythepixel/component-loader/issues"
   },
-  "homepage": "https://github.com/bythepixel/component-loader#readme"
+  "homepage": "https://github.com/bythepixel/component-loader#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-export-default-from": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "@babel/plugin-proposal-private-methods": "^7.12.1",
+    "@babel/preset-env": "^7.12.7"
+  },
+  "dependencies": {
+    "@bythepixel/run-in-view": "^1.0.1"
+  }
 }

@@ -1,4 +1,5 @@
-import { runInView, isValidSelector } from './util';
+import { isValidSelector } from './util';
+import runInView from '@bythepixel/run-in-view';
 import { bindComponent, createRegistryEntry } from './registry';
 
 export default class ComponentLoader {

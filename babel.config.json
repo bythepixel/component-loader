@@ -1,0 +1,22 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage",
+                "corejs": 3
+            }
+        ]
+    ],
+    "plugins": [
+        ["@babel/plugin-proposal-class-properties", {
+            "publicFields": true,
+            "loose": true
+        }],
+        ["@babel/plugin-proposal-private-methods", {
+            "loose": true
+        }],
+        "@babel/plugin-proposal-optional-chaining",
+        "@babel/plugin-proposal-export-default-from"
+    ]
+}
