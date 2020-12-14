@@ -1,4 +1,4 @@
-import { guid } from './util';
+import { id } from './util';
 
 /**
  * Binds a component to the DOM
@@ -18,7 +18,7 @@ export function bindComponent(entry, loaderInstance) {
 
 export function createRegistryEntry(element, Component, options) {
   return {
-    id: guid(),
+    id: id(),
     loaded: false,
     element,
     Component,
