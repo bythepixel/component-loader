@@ -1,0 +1,12 @@
+{
+  "collectCoverage": false,
+  "coverageReporters": [
+    "html",
+    "json",
+    "text"
+  ],
+  "moduleFileExtensions": ["js", "json"],
+  "rootDir": "./src",
+  "testEnvironment": "node",
+  "testRegex": ".spec.js$"
+}
