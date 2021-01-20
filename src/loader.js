@@ -18,7 +18,8 @@ export default class ComponentLoader {
   constructor(container, components, idleQueueDoneCallback = () => {}) {
     this.#container = container;
     this.#idleQueueDoneCallback = idleQueueDoneCallback;
-
+    this.getRegistry = this.getRegistry;
+    
     components.forEach(comp => {
       // eslint-disable-next-line no-unused-expressions
       Array.isArray(comp) ? this._registerComponent(comp[0], comp[1]) : this._registerComponent(comp);
@@ -118,6 +119,10 @@ export default class ComponentLoader {
     });
 
     return true;
+  }
+
+  getRegistry() {
+    return this.#registry;
   }
 
   getLoader(loader) {

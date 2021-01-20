@@ -1,6 +1,6 @@
 {
   "name": "@bythepixel/component-loader",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "description": "'A component loading system for reducing bottlenecks in the browser.'",
   "main": "dist/index.js",
   "scripts": {
