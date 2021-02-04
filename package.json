@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "npx babel src --out-dir dist --source-maps",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config ./jest-config.json --detectOpenHandles --forceExit --no-cache",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -25,7 +25,8 @@
     "@babel/plugin-proposal-export-default-from": "^7.12.1",
     "@babel/plugin-proposal-optional-chaining": "^7.12.7",
     "@babel/plugin-proposal-private-methods": "^7.12.1",
-    "@babel/preset-env": "^7.12.7"
+    "@babel/preset-env": "^7.12.7",
+    "jest": "^26.6.3"
   },
   "dependencies": {
     "@bythepixel/run-in-view": "^1.0.1"
